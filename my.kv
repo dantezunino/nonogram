@@ -6,9 +6,10 @@
         
         TextInput: 
             id:pcho           
-            text:"Escribí tu Nonograma acá! Borrá este texto y lo que escribas se convertirá en el nonograma. Abajo elegís el tamaño!"
+            text:"Escribí tu Nonograma acá! Borrá este texto y lo que escribas se convertirá en el nonograma. Abajo elegís el tamaño! Y si querés, podés randomizar con el botón de la derecha"
         Button:
             text:"Randomizar"
+            on_release: root.randomizar()
         GridLayout:
             cols:4    
             TextInput:

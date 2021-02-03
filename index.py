@@ -6,6 +6,7 @@ from kivy.uix.label import Label
 from kivy.uix.boxlayout import BoxLayout
 from kivy.uix.modalview import ModalView
 from kivy.uix.button import Button
+import random
 
 lili = []
 filas = []
@@ -126,6 +127,15 @@ class MyLayout(Widget):
         sisi.append(k) 
         make_bitseq(choro, k, lili)
         setWinCondition()
+    
+    def randomizar(self):
+        i=0
+        tat = ""
+        while i < 200:
+            tat += str(random.getrandbits(8))
+            i += 1
+        self.ids.pcho.text = tat
+        
     
     def winScreen(self):
         view = ModalView(size_hint=(None, None), size=(600, 300))
