@@ -6,13 +6,36 @@
         
         TextInput: 
             id:pcho           
-            text:"Escribí tu Nonograma acá!"
+            text:"Escribí tu Nonograma acá! Borrá este texto y lo que escribas se convertirá en el nonograma. Abajo elegís el tamaño!"
         Button:
-            text:"Apretame"
-            on_press: root.chhh()
-        TextInput:
-            id:biterios
-            text: "Tamaño: 4, 5, 10, 15, 20"
+            text:"Randomizar"
+        GridLayout:
+            cols:4    
+            TextInput:
+                id:biterios
+                text: "4"
+                readonly:True
+            Button:
+                text:"4"
+                on_press:biterios.text="4"
+            Button:
+                text:"5"
+                on_press:biterios.text="5"
+            Button:
+                text:"8"
+                on_press:biterios.text="8"
+            Button:
+                text:"10"
+                on_press:biterios.text="10"
+            Button:
+                text:"12"
+                on_press:biterios.text="12"
+            Button:
+                text:"15"
+                on_press:biterios.text="15"
+            Button:
+                text:"18"
+                on_press:biterios.text="18"
         Button:
             text:"Jugar"
             on_press: root.jueguito()

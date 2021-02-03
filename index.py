@@ -140,6 +140,7 @@ class MyLayout(Widget):
         view.open()
 
     def jueguito(self):
+        self.chhh()
         view = ModalView(size_hint=(None, None), size=(600, 600))
         totoro = int(sisi[0])
         tablita = GridLayout(cols=totoro)
