@@ -1,0 +1,18 @@
+<MyLayout>
+
+    GridLayout:
+        cols:2
+        size: root.width, root.height
+        
+        TextInput: 
+            id:pcho           
+            text:"Escribí tu Nonograma acá!"
+        Button:
+            text:"Apretame"
+            on_press: root.chhh()
+        TextInput:
+            id:biterios
+            text: "Tamaño: 4, 5, 10, 15, 20"
+        Button:
+            text:"Jugar"
+            on_press: root.jueguito()
