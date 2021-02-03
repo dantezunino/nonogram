@@ -6,7 +6,9 @@ from kivy.uix.label import Label
 from kivy.uix.boxlayout import BoxLayout
 from kivy.uix.modalview import ModalView
 from kivy.uix.button import Button
+from kivy.input.providers import mouse
 import random
+import string
 
 lili = []
 filas = []
@@ -131,8 +133,8 @@ class MyLayout(Widget):
     def randomizar(self):
         i=0
         tat = ""
-        while i < 200:
-            tat += str(random.getrandbits(8))
+        while i < 100:
+            tat += random.choice(string.ascii_letters)
             i += 1
         self.ids.pcho.text = tat
         
